@@ -1,11 +1,21 @@
 package com.tmr.po;
 
 public class User {
+    private Integer userId;
     private String name;
     private String password;
     private String phoneNumber;
     private String address;
-    private Boolean isMerchant;
+    // 0代表商家，1代表用户，2代表快递员
+    private Integer type;
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
 
     public String getName() {
         return name;
@@ -31,12 +41,12 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public Boolean getMerchant() {
-        return isMerchant;
+    public Integer getMerchant() {
+        return type;
     }
 
-    public void setMerchant(Boolean merchant) {
-        isMerchant = merchant;
+    public void setMerchant(Integer type) {
+        this.type = type;
     }
 
     public String getAddress() {
