@@ -41,11 +41,11 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public Integer getMerchant() {
+    public Integer getType() {
         return type;
     }
 
-    public void setMerchant(Integer type) {
+    public void setType(Integer type) {
         this.type = type;
     }
 

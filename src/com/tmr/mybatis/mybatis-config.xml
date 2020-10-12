@@ -6,4 +6,7 @@
     <settings>
         <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>
+    <mappers>
+        <mapper resource="com/tmr/mybatis/UserMapper.xml"/>
+    </mappers>
 </configuration>
