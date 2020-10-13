@@ -11,7 +11,7 @@
     <title>TMR</title>
   </head>
   <body>
-  TMR外卖系统
+  TMR外卖系统<br>
   </body>
   <a href="login.jsp">登录</a><br>
   <a href="register.jsp">注册</a>

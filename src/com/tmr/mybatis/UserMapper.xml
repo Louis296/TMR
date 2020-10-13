@@ -7,4 +7,16 @@
         insert into users(name, password, phonenumber, address, type)
         values (#{name},#{password},#{phoneNumber},#{address},#{type})
     </select>
+    <resultMap id="user" type="com.tmr.po.User">
+        <id column="user_id" property="userId"/>
+        <result column="name" property="name"/>
+        <result column="password" property="password"/>
+        <result column="phonenumber" property="phoneNumber"/>
+        <result column="address" property="address"/>
+        <result column="type" property="type"/>
+    </resultMap>
+    <select id="selectByPhoneNumber" parameterType="String" resultMap="user">
+        select * from users where phonenumber=#{phoneNumber}
+    </select>
+
 </mapper>

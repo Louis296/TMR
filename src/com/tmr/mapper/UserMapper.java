@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository("userMapper")
 public interface UserMapper {
     public void register(User user);
+    public User selectByPhoneNumber(String phoneNumber);
 }

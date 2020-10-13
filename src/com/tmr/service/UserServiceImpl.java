@@ -16,4 +16,9 @@ public class UserServiceImpl implements UserService {
     public void register(User user) {
         userMapper.register(user);
     }
+
+    @Override
+    public User selectByPhoneNumber(String phoneNumber) {
+        return userMapper.selectByPhoneNumber(phoneNumber);
+    }
 }

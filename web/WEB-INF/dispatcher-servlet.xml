@@ -6,5 +6,14 @@
     <mvc:annotation-driven />
     <context:component-scan base-package="com.tmr.controller" />
 
+<!--    解决返回字符串中文乱码问题-->
+    <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+<!--    配置静态资源-->
     <mvc:default-servlet-handler />
 </beans>
