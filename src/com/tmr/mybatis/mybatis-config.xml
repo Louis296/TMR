@@ -8,5 +8,6 @@
     </settings>
     <mappers>
         <mapper resource="com/tmr/mybatis/UserMapper.xml"/>
+        <mapper resource="com/tmr/mybatis/OrderMapper.xml"/>
     </mappers>
 </configuration>

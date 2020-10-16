@@ -12,6 +12,8 @@
 </head>
 <body>
     用户名:${empty user?"未登录":user.name}<br>
+
+    <a href="${pageContext.request.contextPath}/order/getOrders">个人订单</a>
     <a href="${pageContext.request.contextPath}/user/logout">登出</a>
 </body>
 </html>
